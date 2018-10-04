@@ -1,0 +1,18 @@
+import json
+
+{
+  sampleNumber = 25
+  timePassed = "24:01:285" #sec mil micro
+  strain = 23.42
+  displacement = 0.23
+}
+
+sampleList = []
+timeStar = x
+sampleNumber = 0
+for i in range(50):
+  x,y = random.randint()
+  sample = CreateJSONSample(x,y,sampleN,timePassed)
+  sampleList.add(sample)
+  sampleNumber +=1
+ return sampleList
