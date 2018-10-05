@@ -14,7 +14,7 @@ jsonSampleString =
 ##
 
 def readStrainTesterFile():
-    with open(FILENAME, 'r') as f:
+    with open(FILENAME, 'r'):
         sampleList = []
         timeStart = 0
         sampleNumber = 0
@@ -37,5 +37,3 @@ def addStepToAnswer(responseJSON, stateString, actionString):
 def setOrderTimes(responseJOSN, start, end):
     """Function that sets the start and end attributes of the response JSON object to specified parameters"""
     pass
-sampleList = []
-
