@@ -3,10 +3,10 @@ import json
 FILENAME = "sampleObjects.json"
 jsonSampleString = 
 '{
-  sampleNumber = 25
-  timePassed = "24:01:285" #sec mil micro
-  strain = 23.42
-  displacement = 0.23
+  "sampleNumber": "25",
+  "timePassed": "24:01:285",
+  "strain" : 23.42",
+  "displacement" : "0.23"
 }'
 
 sampleList = []
