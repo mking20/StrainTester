@@ -23,6 +23,7 @@ def readStrainTesterFile():
       sample = CreateJSONSample(x,y,sampleNumber,timePassed)
       sampleList.append(sample)
       sampleNumber +=1
+
  return sampleList
         
 def initializeResponse(inputJSON):
