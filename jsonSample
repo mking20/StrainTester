@@ -22,7 +22,9 @@ def createJSONSample(sensor1,sensor2):
   for i in sample():
     createJson.append(i)
     sampleNumber +=1
-  return (createJson)
+    print(createJson)
+ 
+ return (createJson)
   
 def readStrainTesterFile():
   with open(FILENAME, 'r'):
@@ -33,4 +35,6 @@ def readStrainTesterFile():
       x,y = random.randint()
       sample = createJSONSample()
       sampleList.append(sample)
+      print(sampleList)
+      
  return sampleList
