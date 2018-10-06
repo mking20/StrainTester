@@ -9,19 +9,28 @@ jsonSampleString =
   "displacement" : "0.23"
 }'
 
-##
 ## Function that converts to json objects (dictionaries)
-##
 
+def createJSONSample(sensor1,sensor2):
+  createJson = 
+  {
+    "x": "sensor1", 
+    "y" : "sensor2", 
+    "sampleString" : [{"jsonSampleString": ["sampleNumber","timePassed"]}]
+  }
+
+  for i in sample():
+    createJson.append(i)
+    sampleNumber +=1
+  return (createJson)
+  
 def readStrainTesterFile():
-    with open(FILENAME, 'r'):
-        sampleList = []
-        timeStart = 0
-        sampleNumber = 0
+  with open(FILENAME, 'r'):
+    sampleList = []
+    timeStart = 0
+    sampleNumber = 0
     for i in range(50):
       x,y = random.randint()
-      sample = CreateJSONSample(x,y,sampleNumber,timePassed)
+      sample = createJSONSample()
       sampleList.append(sample)
-      sampleNumber +=1
-
  return sampleList
