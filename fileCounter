@@ -1,7 +1,3 @@
-def main():
-    f = open("api.txt","w+")
-    f.write("1\r\n")
-    f.close()
 def counter():
     with open("api.txt","r+") as f:
         value = int(f.read())
