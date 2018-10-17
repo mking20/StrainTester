@@ -1,6 +1,5 @@
 def counter():
   f = open("api.txt","w+")
-  for i in range(5):
-    f.write(""%(i+1))
+  for i in range(10):
+    f.write("file #%d\r\n"%(i+1))
   f.close()
- 
